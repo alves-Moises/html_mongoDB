@@ -16,9 +16,9 @@ router.post('/message', function (req, res, next) {
 })
 
 // " : " indica que esta parte da URL é alguma variavel com dad
-router.get('/message:msgParam', function (req, res, next) { 
+router.get('/message/:msgParam', function (req, res, next) { 
     res.render('node', {message: req.params.msgParam});
 })
 
-
+router.post('/message')
 module.exports = router;
