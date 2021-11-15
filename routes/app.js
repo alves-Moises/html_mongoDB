@@ -21,4 +21,15 @@ router.get('/message/:msgParam', function (req, res, next) {
 })
 
 router.post('/message')
+
+router.get('/login', function (req, res, next) {
+    res.render('login-inicio');
+})
+
+router.get('/login-auth/:user', function (req, res, next) {
+    res.render('logado-inicio', {user: user});
+});
+
+
+
 module.exports = router;
