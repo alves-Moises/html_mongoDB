@@ -28,3 +28,7 @@ input.ng-invalid.ng-touched {
 h1{
   color: #00aa00;
 }
+
+.logado {
+  text-align: center;
+}
