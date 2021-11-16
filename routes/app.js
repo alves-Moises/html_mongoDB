@@ -26,8 +26,8 @@ router.get('/login', function (req, res, next) {
     res.render('login-inicio');
 })
 
-router.get('/login-auth/:user', function (req, res, next) {
-    res.render('logado-inicio', {user: user});
+router.get('/login-auth/', function (req, res, next) {
+    res.render('logado-inicio');
 });
 
 
